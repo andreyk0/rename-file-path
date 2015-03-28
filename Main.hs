@@ -54,7 +54,8 @@ cmdLineArgs =
      <*> option (str >>= parseConversionFormat )
          ( long "format"
         <> short 'f'
-        <> help "name conversion format" )
+        <> metavar "N.E"
+        <> help "name.extension format: e.g. 'n.e' 'N.E'" )
 
      <*> some (argument str (metavar "FILES..."))
 
